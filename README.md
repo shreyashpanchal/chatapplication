@@ -1,5 +1,5 @@
 # chatapplication
-Simple chat application made using fireabse and reatc js
+Simple chat application made using Fireabse and React Js
 
 
 User1:https://chatappid2.netlify.app/
