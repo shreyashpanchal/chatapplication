@@ -1,0 +1,132 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+h1{
+    color:white;
+}
+body{
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main{
+   height:80vh;
+   width:60%;
+   margin:10vh 20%;
+   
+}
+.container{
+    width:100%;
+    height:80%;
+   background-image: url("wall.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+h1{
+    text-align: center;
+    height: 10%;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+.input{
+    height:10%;
+    display: flex;
+    align-items: center;
+    padding:4px;
+    width:100%;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    
+}
+.msg{
+    height:auto;
+    width:70%;
+    color: hsl(201,26%,10%);
+    margin-left:5%;
+    border-radius: 3%;
+    border-top-left-radius: 0;
+    position: relative;
+    margin-bottom:14px;
+    margin-top:14px;
+    background-color: hsl(93,78%,87%);
+    box-shadow: 2px 2px 2px lightgray;
+    padding:8px 10px;
+    word-wrap: break-word;
+   
+}
+.msg::before{
+    content: "";
+    height: 0px;
+    position: absolute;
+    top: 0px;
+    width: 0px;
+    z-index: 1;
+    left: -9px;
+    border: medium solid rgb(226, 226, 226);
+    border-width: 8px 8px 8px 0;
+    border-color: transparent rgb(86, 131, 72) transparent transparent;
+}
+.msg1{
+  height:auto;
+  width:70%;
+  margin-bottom:14px;
+  margin-top:14px;
+  border-radius: 3%;
+  border-top-left-radius: 0;
+  box-shadow: 2px 2px 2px lightgray;
+  margin-left:25%;
+  margin-right:5%;
+  padding:8px 10px;
+  position: relative;
+  word-wrap: break-word;
+  color: hsl(201,26%,10%);
+  
+  background-color:whitesmoke;
+}
+.msg1::before{
+    content: "";
+    height: 0px;
+    position: absolute;
+    top: 0px;
+    width: 0px;
+    z-index: 1;
+    left: 100%;
+    border: medium solid rgb(226, 226, 226);
+    border-width: 8px 8px 8px 0;
+    border-color: transparent rgb(65, 60, 60,0.8) transparent transparent;
+    transform: rotateY(180deg);
+}
+.send:hover{
+    cursor: pointer;
+    position: relative;
+    
+}
+.send{
+    flex:0.10;
+   
+}
+input[type=text]{
+    flex:0.90;
+   outline:none;
+   border: none;
+    height:70%;
+}
+@media screen and (max-width:600px) {
+    .main{
+        height:96vh;
+        width:98%;
+        margin:2vh 1%;
+        
+     }
+    
+}
